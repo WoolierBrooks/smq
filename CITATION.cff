@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use SMQ, please cite the paper below."
+title: "SMQ: Synthetic Score Meta-Learning for Multiclass Quantification"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/WoolierBrooks/smq"
+authors:
+  - family-names: "Riveros Cardus"
+    given-names: "Julio Cesar"
+    email: "julio.cardus@unioeste.br"
+    affiliation: "Universidade Estadual do Oeste do Paraná (UNIOESTE)"
+  - family-names: "Maletzke"
+    given-names: "André Gustavo"
+    affiliation: "Universidade Estadual do Oeste do Paraná (UNIOESTE)"
+  - family-names: "Zalewski"
+    given-names: "Willian"
+    affiliation: "Universidade Federal da Integração Latino-Americana (UNILA)"
+preferred-citation:
+  type: conference-paper
+  title: "SMQ: Synthetic Score Meta-Learning for Multiclass Quantification"
+  authors:
+    - family-names: "Riveros Cardus"
+      given-names: "Julio Cesar"
+    - family-names: "Maletzke"
+      given-names: "André Gustavo"
+    - family-names: "Zalewski"
+      given-names: "Willian"
+  collection-title: "Ibero-American Conference on Artificial Intelligence (IBERAMIA 2026)"
+  conference:
+    name: "IBERAMIA 2026"
+    city: "Asunción"
+    country: "PY"
+  year: 2026

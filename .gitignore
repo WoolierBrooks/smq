@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+
+# local data and generated synthetic curves (large)
+data/
+*.pkl
+
+# new benchmark runs (the published results live in results/raw/*.csv.gz)
+results/raw/*.csv
