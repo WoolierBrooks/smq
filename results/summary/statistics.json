@@ -1,0 +1,50 @@
+{
+  "excluded_datasets": [
+    "dataset_313_spectrometer.csv"
+  ],
+  "all": {
+    "n_datasets": 40,
+    "n_methods": 13,
+    "chi2": 46.66730769230796,
+    "chi2_p": 5.322318518633463e-06,
+    "iman_davenport_F": 4.200063905420005,
+    "iman_davenport_p": 2.6913854194294448e-06,
+    "nemenyi_cd": 2.884810169804236,
+    "best": "PCC",
+    "not_significantly_different_from_best": [
+      "PCC",
+      "PWK",
+      "CC",
+      "EMQ_BCTS",
+      "KDEyML",
+      "KDEyCS",
+      "SMQ_ISO",
+      "KDEyHD",
+      "SMQ",
+      "AC"
+    ]
+  },
+  "high": {
+    "n_datasets": 15,
+    "n_methods": 13,
+    "chi2": 40.9758241758242,
+    "chi2_p": 4.94604130174899e-05,
+    "iman_davenport_F": 4.126343746047809,
+    "iman_davenport_p": 1.1824609102839224e-05,
+    "nemenyi_cd": 4.710875280541383,
+    "best": "SMQ_ISO",
+    "not_significantly_different_from_best": [
+      "SMQ_ISO",
+      "PCC",
+      "CC",
+      "SMQ",
+      "EMQ_BCTS",
+      "KDEyCS",
+      "PWK",
+      "EMQ",
+      "AC",
+      "KDEyML",
+      "KDEyHD"
+    ]
+  }
+}
