@@ -4,7 +4,7 @@
     python experiments/generate_synthetic.py --classes 3 10 50 --seed 0
 
 Each file ``moss_d500_lite_<C>.pkl`` holds ``{(prevalence, m): [scores, ...]}``
-with 15 prevalences x 15 merging factors x 20 samples of 150 instances, the
+with 15 prevalences x 15 merging factors x 20 samples of 100 instances, the
 configuration of the published experiment. The original files were generated
 without a fixed seed, so regenerated files are statistically equivalent but
 not bit-identical.
@@ -28,7 +28,7 @@ def main(argv=None):
     ap.add_argument("--n-prevalences", type=int, default=15)
     ap.add_argument("--n-merging", type=int, default=15)
     ap.add_argument("--n-replicates", type=int, default=20)
-    ap.add_argument("--sample-size", type=int, default=150)
+    ap.add_argument("--sample-size", type=int, default=100)
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args(argv)
 

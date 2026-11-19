@@ -78,7 +78,7 @@ q.aggregate(scores)      # estimate straight from a matrix of classifier scores
 |---|---|---|
 | `classifier` | `RandomForestClassifier(300)` | probabilistic classifier that produces the scores |
 | `calibrate` | `True` | fit the isotonic calibration (SMQ-ISO) |
-| `n_prevalences`, `n_merging`, `n_replicates`, `sample_size` | `15, 15, 20, 150` | size of the synthetic training set |
+| `n_prevalences`, `n_merging`, `n_replicates`, `sample_size` | `15, 15, 20, 100` | size of the synthetic training set |
 | `synthetic` | `None` | pre-computed synthetic curves, e.g. the files of the paper |
 | `calib_prevalences`, `calib_repeats`, `calib_batch_size` | `10, 25, 500` | real calibration batches (UPP over the training set) |
 

@@ -38,7 +38,7 @@ class SMQ(BaseEstimator):
         Size of the synthetic training set: prevalence vectors sampled from
         ``Dirichlet(1)``, merging factors evenly spaced in ``[0, 1]``, samples
         per pair and instances per sample. Defaults reproduce the synthetic
-        files of the published experiment (15 x 15 x 20 samples of 150
+        files of the published experiment (15 x 15 x 20 samples of 100
         instances).
     synthetic : dict, optional
         Pre-computed synthetic curves (``{(prevalence, m): [scores, ...]}``),
@@ -79,7 +79,7 @@ class SMQ(BaseEstimator):
         n_prevalences: int = 15,
         n_merging: int = 15,
         n_replicates: int = 20,
-        sample_size: int = 150,
+        sample_size: int = 100,
         synthetic: dict | None = None,
         cv: int = 5,
         calib_batch_size: int = 500,

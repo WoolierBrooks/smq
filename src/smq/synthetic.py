@@ -15,12 +15,14 @@ overall scale that shrinks as ``m`` grows::
     center  = normalise(1/C everywhere, 1 at class k)
     alpha_k = eps + scale * ((1 - m) * center + m * 1/C)
 
-This is, line by line, the generator that produced the synthetic files of the
-published experiment (``experiments/exp_010/note.ipynb`` in the thesis
-repository, files ``moss_d500_lite_<C>.pkl``): 15 prevalence vectors drawn from
-``Dirichlet(1_C)`` x 15 merging factors evenly spaced in ``[0, 1]`` x 20
-samples per pair, each with 150 instances. The only change is that randomness
-goes through an explicit, seedable generator.
+The concentration rule is the one in the generator notebook of the thesis
+repository (``experiments/exp_010/note.ipynb``), which writes the files
+``moss_d500_lite_<C>.pkl`` used in the published run: 15 prevalence vectors
+drawn from ``Dirichlet(1_C)`` x 15 merging factors evenly spaced in ``[0, 1]``
+x 20 samples per pair, each with 100 instances. The committed notebook has
+``n_samples=150``, but the original files have 100 instances per sample, as the
+paper states, so 100 is the default here. The only other change is that
+randomness goes through an explicit, seedable generator.
 """
 
 from __future__ import annotations
@@ -94,7 +96,7 @@ def synthetic_curves(
     n_prevalences: int = 15,
     n_merging: int = 15,
     n_replicates: int = 20,
-    sample_size: int = 150,
+    sample_size: int = 100,
     random_state=None,
 ) -> dict:
     """Generate the synthetic score distributions used to train SMQ.
